@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesões do Clube</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="cabecalho">
+        <h1>Catálogo de Lesões do São Paulo FC.</h1>
+    
+        <p>
+            Selecione o ano e mês para filtrar as lesões exibidas na tabela.</br>
+            Para os dados do gráfico, apenas o ano é considerado.
+        </p>
+
+    </div>
+
+    <div class="filters">
+        <label for="year">Ano:</label>
+        <select id="year"></select>
+
+        <label for="month">Mês:</label>
+        <select id="month">
+            <option value="">Todos</option>
+            <option value="01">Janeiro</option>
+            <option value="02">Fevereiro</option>
+            <option value="03">Março</option>
+            <option value="04">Abril</option>
+            <option value="05">Maio</option>
+            <option value="06">Junho</option>
+            <option value="07">Julho</option>
+            <option value="08">Agosto</option>
+            <option value="09">Setembro</option>
+            <option value="10">Outubro</option>
+            <option value="11">Novembro</option>
+            <option value="12">Dezembro</option>
+        </select>
+        </br>
+        <label>
+              <input type="checkbox" id="onlyInjured">
+              Mostrar apenas lesionados no momento
+        </label>
+
+
+    </div>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Jogador</th>
+            <th>Data da Lesão</th>
+            <th>Data de Retorno</th>
+            <th>Jogos Ausentes</th>
+            <th>Tipo de Lesão</th>
+        </tr>
+        </thead>
+        <tbody id="injuryTable"></tbody>
+    </table>
+
+    <h2 id="chartTitle">Lesões por Mês</h2>
+    <canvas id="injuryChart" width="350" height="70"></canvas>
+
+    <div id="currentInjuries" class="summary"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+    <script defer src="js/script.js"></script>
+</body>
+</html>
