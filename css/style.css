@@ -8,9 +8,10 @@ body {
     text-align: center;
 }
 
-h1 {
+h1,h2 {
   text-align: center;
 }
+
 
 .filters {
   margin-bottom: 20px;
@@ -48,4 +49,15 @@ th {
 
 #chartTitle {
     text-align: center;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: rgba(65, 65, 65, 0.1);
+  opacity: 0.8;
+}
+
+#footer {
+  text-align: center;
 }
