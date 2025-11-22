@@ -256,3 +256,17 @@ document.getElementById("onlyInjured").addEventListener("change", () => {
   const filtered = filterData(injuries);
   renderTable(filtered);
 });
+
+
+    async function getLastCommit() {
+      const repo = "nulljao/lesoes_spfc"; // substitua pelo seu repo
+      const response = await fetch(`https://api.github.com/repos/${repo}/commits?per_page=1`);
+      const data = await response.json();
+      const lastCommitDate = new Date(data[0].commit.author.date);
+
+      // Formata a data para dd/mm/yyyy
+      const formattedDate = lastCommitDate.toLocaleDateString("pt-BR");
+      document.getElementById("last-update").textContent = formattedDate;
+    }
+
+    getLastCommit();

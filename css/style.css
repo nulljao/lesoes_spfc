@@ -47,6 +47,11 @@ th {
   font-size: 18px;
 }
 
+div.last-update {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
 #chartTitle {
     text-align: center;
 }

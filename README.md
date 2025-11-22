@@ -7,6 +7,8 @@ Esse site foi construído devido a sucessivas lesões que o São Paulo Futebol C
 O intuito é justamente denunciar e pressionar por melhorias no departamento médico do clube, buscando garantir melhores condições de tratamento e prevenção para os atletas.
 
 A fonte dos dados é do site <a href="https://www.transfermarkt.com.br/" target="_blank">Transfermarkt</a>, porém, com dados obtidos do elenco do clube no momento em que foi construído (novembro, 2025), eventuais jogadores que fizeram parte do elenco em 2025 e já haviam saído do clube não foram considerados.
+
+Se a contagem de jogos estiver desatualizada (dos jogadores atualmente lesionados), é porque a alteração é manual então a cada jogo novo ausente preciso incrementar a quantidade e talevz eu esqueça de fazer isso após o novo jogo, ou simplesmente você foi mais rápido e acessou a página antes da atualização =P 
             
 ## Contribuição
 
