@@ -106,7 +106,7 @@ function getYearlyData(injuries) {
     setupChart(getYearlyData(injuries));
     updateChartTitle(injuries);
     renderCurrentInjuries(injuries); // continua independente
-
+    updateFilterSummary();
 
   // Atualiza tabela e gráfico quando filtros mudarem
   document.getElementById("year").addEventListener("change", () => {
@@ -115,6 +115,7 @@ function getYearlyData(injuries) {
     updateChart(injuries);
     updateChartTitle(injuries);
     renderCurrentInjuries(injuries); // continua independente
+    updateFilterSummary();
 
 });
 
@@ -123,12 +124,14 @@ function getYearlyData(injuries) {
     renderTable(filtered);
     updateChartTitle(injuries);
     renderCurrentInjuries(injuries); // continua independente
+    updateFilterSummary();
 });
 
   document.getElementById("onlyInjured").addEventListener("change", () => {
     const filtered = filterData(injuries);
     renderTable(filtered);
     renderCurrentInjuries(injuries);
+    updateFilterSummary();
 });
 })();
 
@@ -201,7 +204,7 @@ function setupChart(initialData) {
         datalabels: {
           anchor: 'center',
           align: 'center',
-          color: '#333',
+          color: '#ffffffff',
           font: { weight: 'bold' },
           formatter: value => value === 0 ? null : value
         }
@@ -223,6 +226,7 @@ function updateChart(injuries) {
   const yearlyCounts = getYearlyData(injuries);
   injuryChart.data.datasets[0].data = yearlyCounts;
   injuryChart.update();
+
 }
 
 function updateChartTitle(injuries) {
@@ -257,16 +261,22 @@ document.getElementById("onlyInjured").addEventListener("change", () => {
   renderTable(filtered);
 });
 
+function updateFilterSummary() {
+    const visibleRows = document.querySelectorAll('#injuryTable tr:not([style*="display: none"])').length;
+    document.getElementById('totalRecords').textContent = visibleRows;
+}
 
-    async function getLastCommit() {
-      const repo = "nulljao/lesoes_spfc"; // substitua pelo seu repo
-      const response = await fetch(`https://api.github.com/repos/${repo}/commits?per_page=1`);
-      const data = await response.json();
-      const lastCommitDate = new Date(data[0].commit.author.date);
+async function getLastCommit() {
+  const repo = "nulljao/lesoes_spfc"; // substitua pelo seu repo
+  const response = await fetch(`https://api.github.com/repos/${repo}/commits?per_page=1`);
+  const data = await response.json();
+  const lastCommitDate = new Date(data[0].commit.author.date);
 
-      // Formata a data para dd/mm/yyyy
-      const formattedDate = lastCommitDate.toLocaleDateString("pt-BR");
-      document.getElementById("last-update").textContent = formattedDate;
-    }
+  // Formata a data para dd/mm/yyyy
+  const formattedDate = lastCommitDate.toLocaleDateString("pt-BR");
+  document.getElementById("last-update").textContent = formattedDate;
+}
 
-    getLastCommit();
+getLastCommit();
+
+
