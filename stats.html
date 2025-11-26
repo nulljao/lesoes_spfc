@@ -57,51 +57,33 @@
         </thead>
         <tbody id="injuryTable"></tbody>
     </table>
-        <div id="filterSummary" class="filter-summary">
+
+    <div id="filterSummary" class="filter-summary">
         <p>Total de jogadores lesionados no período selecionado: <strong id="totalRecords">0</strong></p>
     </div>
+
+    <!-- Nova seção: Top 5 jogadores com mais lesões -->
+    <section id="stats" class="stats">
+        <h3>Top 5 - Jogadores que mais aparecem</h3>
+        <ol id="topPlayers"></ol>
+    </section>
 
     <h2 id="chartTitle">Lesões por Mês</h2>
     <canvas id="injuryChart" width="350" height="70"></canvas>
 
     <div id="currentInjuries" class="summary"></div>
     </br>
-
-    <!-- Nova seção: Top 5 jogadores com mais lesões -->
-    <section id="stats" class="stats">
-        <div class="stat-card">
-            <h3>Top 5 - Jogadores com mais lesões</h3>
-            <ol id="topPlayers"></ol>
-        </div>
-
-        <div class="stat-card">
-            <h4>Top 5 - Mais jogos perdidos</h4>
-            <ol id="topByGames"></ol>
-        </div>
-
-        <div class="stat-card">
-            <h4>Top 5 - Mais dias fora</h4>
-            <ol id="topByDays"></ol>
-        </div>
-    </section>
-
-    </br>
-    <!-- ...existing code... -->
-
     <div class="last-update">
         <strong>Última atualização:</strong> <span id="last-update">carregando...</span></p>
     </div>
 
-    
-
     <hr>    
     <div id="footer">
         <footer>
-            <p><a href="./sobre.html">sobre</a> | <a href="https://github.com/nulljao/lesoes_spfc">contribua</a></p>
+            <p><a href="./index.html">home</a> | <a href="./sobre.html">sobre</a> | <a href="https://github.com/nulljao/lesoes_spfc">contribua</a></p>
             <p>
             </p>
                 
-
             <p>&copy; 2025  <a href="https://github.com/nulljao/" target="_blank">nulljao</a>. Todos os direitos reservados.</p>
         </footer>
     </div>
@@ -110,7 +92,5 @@
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
 
     <script defer src="js/script.js"></script>
-    <script defer src="js/stats.js"></script>
-    
 </body>
 </html>

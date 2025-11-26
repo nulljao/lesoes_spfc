@@ -79,3 +79,40 @@ hr {
     margin: 0;
     font-size: 14px;
 }
+
+/* ...existing code... */
+.stats {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin: 18px 0;
+  flex-wrap: wrap; /* empilha em telas pequenas */
+}
+
+.stat-card {
+  flex: 1 1 260px; /* cresce, encolhe, largura base 260px */
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  padding: 12px 14px;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  min-width: 220px;
+}
+
+/* ajustes de tipografia */
+.stat-card h3, .stat-card h4 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+
+.stat-card ol {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+/* opcional: tornar itens mais compactos em telas pequenas */
+@media (max-width: 700px) {
+  .stat-card { padding: 10px; }
+  .stat-card ol li { font-size: 0.95rem; margin-bottom: 6px; }
+}
+/* ...existing code... */
