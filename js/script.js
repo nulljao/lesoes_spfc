@@ -1,4 +1,11 @@
-// Função para carregar CSV
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-SBLMBTGRM4');
+
+
+
 async function loadCSV() {
   const response = await fetch("data/lesoes.csv");
   const data = await response.text();
