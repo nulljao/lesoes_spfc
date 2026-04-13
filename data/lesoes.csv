@@ -1,12 +1,14 @@
 jogador,dataLesao,dataRetorno,jogosAusentes,tipo
-Sabino,2026-04-05,,1,Problemas na panturrilha
-Luciano,2026-04-05,,1,Problemas na panturrilha
+Pablo Maia,2026-04-08,,2,Fratura na face
+Damián Bobadilla,2024-04-08,,2,Lesão na perna
+Sabino,2026-04-05,,2,Problemas na panturrilha
+Luciano,2026-04-05,,2,Problemas na panturrilha
 Alan Franco,2026-03-22,2026-04-06,2,Problemas na panturrilha
-Lucas Moura,2026-03-19,,5,Fratura na grelha costal 
+Lucas Moura,2026-03-19,,6,Fratura na grelha costal 
 Danielzinho,2026-02-22,2026-02-26,1,Fadiga muscular
 Lucca,2026-02-16,,11,Problemas musculares na coxa
 Carlos Coronel,2026-15-02,2026-25-02,2,Problema nos rins
-Paulinho,2026-01-26,,16,Estiramento do ligamento coletaral interno do joelho
+Paulinho,2026-01-26,,17,Estiramento do ligamento coletaral interno do joelho
 Luciano,2025-11-24,2025-12-01,1,Dor perna direita
 Ferreirinha,2025-11-23,2025-12-01,2,Edema na coxa esquerda
 Rafael Tolói,2025-11-21,2025-11-27,1,Lesão muscular quadril
@@ -37,7 +39,7 @@ Arboleda,2025-08-07,2025-09-13,7,Lesão na coxa
 Wendell,2025-08-01,2025-08-29,8,Lesão na coxa
 Oscar,2025-07-20,2025-10-01,17,Fratura de vértebra lombar
 Enzo Díaz,2025-07-17,2025-07-23,2,Problemas gástricos
-Ryan Francisco,2025-07-15,,52,Ruptura do LCA + menisco do joelho direito
+Ryan Francisco,2025-07-15,,53,Ruptura do LCA + menisco do joelho direito
 Cédric Soares,2025-05-27,2025-05-30,1,Problemas na panturrilha
 Oscar,2025-05-25,2025-06-27,3,Problemas musculares na coxa
 Marcos Antônio,2025-05-18,2025-06-27,6,Lesão na coxa
