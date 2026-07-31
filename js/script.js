@@ -50,7 +50,9 @@ function renderTable(injuries) {
 // Popular anos disponíveis
 function populateYears(injuries) {
   const yearSelect = document.getElementById("year");
-  const years = [...new Set(injuries.map(i => i.dataLesao.split("-")[0]))];
+  const years = [...new Set(injuries.map(i => i.dataLesao.split("-")[0]))]
+    .sort((a, b) => Number(b) - Number(a));
+
   yearSelect.innerHTML = `<option value="">Todos</option>`;
   years.forEach(year => {
     yearSelect.innerHTML += `<option value="${year}">${year}</option>`;
