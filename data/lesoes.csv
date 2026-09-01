@@ -1,5 +1,9 @@
 jogador,dataLesao,dataRetorno,jogosAusentes,tipo
-Rafael Tolói,2026-07-22,,2,Lesão na coxa
+Victor Sá,2026-08-22,,2,Entorse do tornozelo
+Damián Bobadilla,2026-08-14,,4,Problemas no joelho
+Lucca,2026-08-01,,6,Fratura,
+Rafael Tolói,2026-07-22,2026-08-28,6,Lesão na coxa
+Damián Bobadilla,2026-07-23,2026-08-07,1,Problemas no joelho
 Damián Bobadilla,2026-05-25,2026-06-02,2,Problemas no joelho
 Luciano,2026-05-24,2026-06-17,2,Problemas na panturrilha
 Sabino,2026-05-24,2026-07-20,2,Lesão na coxa
@@ -7,7 +11,7 @@ Cauly,2026-05-17,2026-06-17,4,Problemas musculares
 Luciano,2026-05-14,2026-05-19,2,Lesão na coxa
 Alan Franco,2026-05-03,2026-05-19,4,Lesão no adutor
 Lucas Ramon,2026-05-03,2026-05-15,3,Lesão na panturrilha 
-Lucas Moura,2026-05-03,,10,Rotura do tendão de Aquiles
+Lucas Moura,2026-05-03,,16,Rotura do tendão de Aquiles
 Rafael Tolói,2026-04-26,2026-05-25,8,Problemas na panturrilha
 Ferreirinha,2026-04-12,2026-04-28,4,Problemas musculares na coxa
 Marcos Antônio,2026-04-15,2026-05-30,12,Lesão na coxa
